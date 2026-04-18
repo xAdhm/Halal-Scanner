@@ -21,10 +21,12 @@ public class Product {
 
     public void setIngredients(ArrayList<Ingredient> ingredients) {
         this.ingredients = ingredients;
+        this.status = PermissibilityStatus.HARAM;
     }
 
     public void addIngredient(Ingredient ingredient) {
         this.ingredients.add(ingredient);
+        this.status = PermissibilityStatus.HARAM;
     }
 
     public void removeIngredient(Ingredient ingredient) {

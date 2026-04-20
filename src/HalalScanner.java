@@ -16,6 +16,7 @@ public class HalalScanner {
 
             if (haramList.containsKey(name)) {
                 product.setStatus(haramList.get(name));
+                ingredient.setStatus(haramList.get(name));
 
                 if (product.getStatus().equals(PermissibilityStatus.HARAM)) {
                     break;
